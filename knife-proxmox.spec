@@ -16,7 +16,11 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-ProxmoxVE Support for Chef's Knife Command
+This knife plugin allows to access Proxmox Virtualization Environment
+(Proxmox VE or PVE) through its API. It allows you to lists templates
+installed on the server/cluster (like images or amis), create a server
+or destroy it. Currently it only supports management of openVZ
+instances, but KVM instances will be able in a future.
 
 %prep
 %setup -q
